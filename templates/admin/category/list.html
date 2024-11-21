@@ -1,0 +1,97 @@
+{% extends "admin/layout/layout.html" %}
+
+<!-- ============================================================== -->
+<!-- Start Page Content here -->
+<!-- ============================================================== -->
+{% block content %}
+
+    <main class="p-6">
+
+    <div class="card">
+                        <div class="p-6">
+
+                            <div class="flex items-center justify-between mb-6">
+                                <h3 class="card-title">Hoverable rows</h3>
+
+                                <div>
+                                    <button data-fc-target="dropdown-target5" data-fc-type="dropdown" type="button" data-fc-placement="bottom-end" class="fc-dropdown">
+                                        <i class="mdi mdi-dots-vertical text-xl"></i>
+                                    </button>
+
+                                    <div id="dropdown-target5" class="hidden bg-white shadow rounded border dark:border-slate-700 fc-dropdown-open:translate-y-0 translate-y-3 origin-center transition-all duration-300 py-2 dark:bg-gray-800 fc-dropdown">
+                                        <a class="flex items-center py-1.5 px-5 text-sm transition-all duration-300 bg-transparent text-gray-800 dark:text-white hover:bg-stone-100 dark:hover:bg-slate-700 dark:hover:text-gray-200" href="javascript:void(0)">
+                                            Action
+                                        </a>
+                                        <a class="flex items-center py-1.5 px-5 text-sm transition-all duration-300 bg-transparent text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="javascript:void(0)">
+                                            Another action
+                                        </a>
+                                        <a class="flex items-center py-1.5 px-5 text-sm transition-all duration-300 bg-transparent text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="javascript:void(0)">
+                                            Something else
+                                        </a>
+                                        <a class="flex items-center py-1.5 px-5 text-sm transition-all duration-300 bg-transparent text-gray-800 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-gray-300" href="javascript:void(0)">
+                                            Separated link
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="overflow-x-auto">
+                                <div class="min-w-full inline-block align-middle">
+                                    <div class="overflow-hidden">
+                                        <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col" class="px-4 py-4 text-start text-sm font-medium text-gray-500">Product</th>
+                                                    <th scope="col" class="px-4 py-4 text-start text-sm font-medium text-gray-500">Price</th>
+                                                    <th scope="col" class="px-4 py-4 text-start text-sm font-medium text-gray-500">Quantity</th>
+                                                    <th scope="col" class="px-4 py-4 text-start text-sm font-medium text-gray-500">Amount</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="divide-y divide-gray-200 dark:divide-gray-700">
+                                                <tr>
+                                                    <td class="px-4 py-4 whitespace-nowrap text-sm font-medium text-gray-500 dark:text-gray-200">ASOS Ridley High Waist</td>
+                                                    <td class="px-4 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-200">$79.49</td>
+                                                    <td class="px-4 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-200">
+                                                        <span class="text-xs text-white bg-primary rounded-md px-1 py-0.5">82 Pcs</span>
+                                                    </td>
+                                                    <td class="px-4 py-4 whitespace-nowrap text-start text-gray-500 dark:text-gray-200">$6,518.18</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="px-4 py-4 whitespace-nowrap text-sm font-medium text-gray-500 dark:text-gray-200">Marco Lightweight Shirt</td>
+                                                    <td class="px-4 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-200">$128.50</td>
+                                                    <td class="px-4 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-200">
+                                                        <span class="text-xs text-white bg-primary rounded-md px-1 py-0.5">37 Pcs</span>
+                                                    </td>
+                                                    <td class="px-4 py-4 whitespace-nowrap text-start text-gray-500 dark:text-gray-200">$4,754.50</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="px-4 py-4 whitespace-nowrap text-sm font-medium text-gray-500 dark:text-gray-200">Half Sleeve Shirt</td>
+                                                    <td class="px-4 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-200">$39.99</td>
+                                                    <td class="px-4 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-200">
+                                                        <span class="text-xs text-white bg-primary rounded-md px-1 py-0.5">64 Pcs</span>
+                                                    </td>
+                                                    <td class="px-4 py-4 whitespace-nowrap text-start text-gray-500 dark:text-gray-200">$2,559.36</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class="px-4 py-4 whitespace-nowrap text-sm font-medium text-gray-500 dark:text-gray-200">Lightweight Jacket</td>
+                                                    <td class="px-4 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-200">$20.00</td>
+                                                    <td class="px-4 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-200">
+                                                        <span class="text-xs text-white bg-primary rounded-md px-1 py-0.5">184 Pcs</span>
+                                                    </td>
+                                                    <td class="px-4 py-4 whitespace-nowrap text-start text-gray-500 dark:text-gray-200">$3,680.00</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+    </main>
+
+{% endblock %}
