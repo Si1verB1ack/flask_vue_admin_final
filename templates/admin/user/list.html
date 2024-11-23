@@ -788,7 +788,7 @@
                             if (response.status >= 200 && response.status < 300) {
                                 // Handle the success case
                                 this.clearForm();
-                                {#this.toggleModal();#}
+                                this.toggleModal();
                                 this.showSuccessAlert("Success", "User added successfully", "success"); // Call this function when you want to trigger the alert
                                 this.fetchUser(); // Refresh users
                                 this.loading = false; // Hide loading indicator

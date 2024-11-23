@@ -110,19 +110,17 @@ def update_user(user_id):
         image_name = None
 
     if profile != user.profile:
-        if image_name:
-            temp_file_path = str(os.path.join(app.config['TEMP_FOLDER'], image_name))
-            final_file_path = str(os.path.join(app.config['CROPPED_PROFILE_FOLDER'], image_name))
+        temp_file_path = str(os.path.join(app.config['TEMP_FOLDER'], image_name))
+        final_file_path = str(os.path.join(app.config['CROPPED_PROFILE_FOLDER'], image_name))
 
-            if os.path.exists(temp_file_path):
-                shutil.copy(temp_file_path, final_file_path)
+        if os.path.exists(temp_file_path):
+            shutil.copy(temp_file_path, final_file_path)
 
-            temp_original_file_path = str(os.path.join(app.config['TEMP_ORIGINAL_FOLDER'], image_name))
-            profile_original_file = str(os.path.join(app.config['ORIGINAL_PROFILE_FOLDER'], image_name))
+        temp_original_file_path = str(os.path.join(app.config['TEMP_ORIGINAL_FOLDER'], image_name))
+        profile_original_file = str(os.path.join(app.config['ORIGINAL_PROFILE_FOLDER'], image_name))
 
-            if os.path.exists(temp_original_file_path):
-                shutil.copy(temp_original_file_path, profile_original_file)
-
+        if os.path.exists(temp_original_file_path):
+            shutil.copy(temp_original_file_path, profile_original_file)
 
     # Hash password if it's provided
     if password:
