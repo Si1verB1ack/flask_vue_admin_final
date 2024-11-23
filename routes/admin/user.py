@@ -56,9 +56,6 @@ def add_user():
         if os.path.exists(temp_original_file_path):
             shutil.copy(temp_original_file_path, profile_original_file)
 
-    if not name or not password or not email or not gender or not role or not status:
-        return jsonify({'error': 'Name, password, email, gender, role, and status are required'}), 400
-
     hashed_password = generate_password_hash(password)
 
     # Create a new user
@@ -126,9 +123,6 @@ def update_user(user_id):
             if os.path.exists(temp_original_file_path):
                 shutil.copy(temp_original_file_path, profile_original_file)
 
-    # Check if required fields are provided
-    if not name or not password or not email or not gender or not role or not status:
-        return jsonify({'error': 'Name, password, email, gender, role, and status are required'}), 400
 
     # Hash password if it's provided
     if password:

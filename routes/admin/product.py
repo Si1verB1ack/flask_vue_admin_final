@@ -52,9 +52,6 @@ def add_product():
         if os.path.exists(temp_original_file_path):
             shutil.copy(temp_original_file_path, product_image_name_original_file)
 
-    if not name or not cost or not price:
-        return jsonify({'error': 'Name, cost, and price are required'}), 400
-
     new_product = Product(
         name=name,
         code=code,
@@ -112,10 +109,6 @@ def update_product(product_id):
 
         if os.path.exists(temp_original_file_path):
             shutil.copy(temp_original_file_path, product_image_name_original_file)
-
-    # Validate required fields
-    if not name or not cost or not price:
-        return jsonify({'error': 'Name, cost, and price are required'}), 400
 
     # Update the product fields
     product.name = name
