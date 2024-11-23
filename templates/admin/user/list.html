@@ -702,15 +702,22 @@
                         // Prepare the FormData and append the cropped file
                         const formData = new FormData();
                         formData.append('cropped_image', croppedFile); // Append cropped image
-                        try {
-                            const compressedFile = await compressFile(this.originalFile, 0.7);
-                            console.log('Original File:', this.originalFile);
-                            console.log('Compressed File:', compressedFile);
-                            this.originalFile = compressedFile;
+                        if (this.checkImageSize(this.originalFile, 2)) {
+                            try {
+                                const compressedFile = await compressFile(this.originalFile, 0.7);
+                                console.log('Original File:', this.originalFile);
+                                console.log('Compressed File:', compressedFile);
+                                this.originalFile = compressedFile;
+                                formData.append('original_image', this.originalFile); // Append compressed original image
+                                console.log('uploading with compression');
+                            } catch (compressionError) {
+                                console.error('Compression failed:', compressionError);
+                                return; // Stop further processing if compression fails
+                            }
+                        } else {
+                            // If the image is not larger than 2MB, just upload the original image
                             formData.append('original_image', this.originalFile); // Append compressed original image
-                        } catch (compressionError) {
-                            console.error('Compression failed:', compressionError);
-                            return; // Stop further processing if compression fails
+                            console.log('Image is smaller than 2MB, uploading without compression');
                         }
                         axios.post('/admin/api/upload-temp-image/create', formData, {
                             headers: {
@@ -733,7 +740,11 @@
                         this.cropperInstance = null;
                     }
                 },
-
+                checkImageSize(file, maxSizeMB) {
+                    // Convert maxSizeMB to bytes (1MB = 1024 * 1024 bytes)
+                    const maxSizeBytes = maxSizeMB * 1024 * 1024;
+                    return file.size > maxSizeBytes; // Returns true if the file is larger than the max size
+                },
                 // Cancel Cropping
                 cancelCrop() {
                     this.isCropModal = false; // Close the modal
