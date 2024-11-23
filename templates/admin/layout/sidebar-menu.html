@@ -1,10 +1,113 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+<div class="app-menu">
+
+    <!-- Sidenav Brand Logo -->
+    <a href="{{ url_for('dashboard') }}" class="logo-box">
+        <!-- Light Brand Logo -->
+        <div class="logo-light">
+            <img src="{{ url_for('static', filename='admin/assets/images/logo-light.png') }}" class="logo-lg"
+                 alt="Light logo">
+            <img src="{{ url_for('static', filename='admin/assets/images/logo-sm.png') }}" class="logo-sm"
+                 alt="Small logo">
+        </div>
+
+        <!-- Dark Brand Logo -->
+        <div class="logo-dark">
+            <img src="{{ url_for('static', filename='admin/assets/images/logo-dark.png') }}" class="logo-lg"
+                 alt="Dark logo">
+            <img src="{{ url_for('static', filename='admin/assets/images/logo-sm.png') }}" class="logo-sm"
+                 alt="Small logo">
+        </div>
+    </a>
+
+
+    <!--- Menu -->
+    <div data-simplebar>
+        <!-- User Box -->
+        <div class="user-box relative text-center">
+            <img src="{{ url_for('static', filename='admin/assets/images/users/user-1.jpg') }}" alt="user-image"
+                 class="rounded-full h-14 w-14 p-1 border border-gray-300/30 mx-auto mb-3">
+            <div>
+                <button data-fc-type="dropdown" data-fc-placement="bottom" type="button"
+                        class="user-name text-[15px] font-medium mb-1.5">Nowak Helme
+                </button>
+                <div class="fc-dropdown fc-dropdown-open:opacity-100 hidden opacity-0 w-40 z-50 transition-all duration-300 bg-white shadow-lg border rounded-lg p-2 border-gray-200 dark:border-gray-700 dark:bg-gray-800">
+
+                    <!-- item-->
+                    <a class="flex items-center py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-primary dark:text-gray-400 hover:text-white dark:hover:text-white"
+                       href="#">
+                        <i data-lucide="user" class="w-4 h-4 me-2"></i>
+                        <span>My Account</span>
+                    </a>
+
+                    <!-- item-->
+                    <a class="flex items-center py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-primary dark:text-gray-400 hover:text-white dark:hover:text-white"
+                       href="#">
+                        <i data-lucide="settings" class="w-4 h-4 me-2"></i>
+                        <span>Settings</span>
+                    </a>
+
+                    <!-- item-->
+                    <a class="flex items-center py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-primary dark:text-gray-400 hover:text-white dark:hover:text-white"
+                       href="#">
+                        <i data-lucide="lock" class="w-4 h-4 me-2"></i>
+                        <span>Lock Screen</span>
+                    </a>
+
+                    <!-- item-->
+                    <a class="flex items-center py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-primary dark:text-gray-400 hover:text-white dark:hover:text-white"
+                       href="#">
+                        <i data-lucide="log-out" class="w-4 h-4 me-2"></i>
+                        <span>Logout</span>
+                    </a>
+                </div>
+            </div>
+
+            <p class="user-name text-sm mb-3">Admin</p>
+
+            <div class="flex justify-center gap-2 mb-4">
+                <a href="#" class="user-name">
+                    <i class="mdi mdi-cog text-base"></i>
+                </a>
+
+                <a href="#" class="user-name">
+                    <i class="mdi mdi-power text-base"></i>
+                </a>
+            </div>
+        </div>
+
+        <ul class="menu" data-fc-type="accordion">
+            <li class="menu-title">Navigation</li>
+
+            <li class="menu-item">
+                <a href="{{ url_for('dashboard') }}" class="menu-link">
+                    <span class="menu-icon"><i class="mdi mdi-view-dashboard-outline"></i></span>
+                    <span class="menu-text"> Dashboard </span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="{{ url_for('user_list') }}" class="menu-link">
+                    <span class="menu-icon"><i class="mdi mdi-account-outline"></i></span>
+                    <span class="menu-text"> User </span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="{{ url_for('categories_list') }}" class="menu-link">
+                    <span class="menu-icon"><i class="mdi mdi-file-tree-outline"></i></span>
+                    <span class="menu-text"> Category </span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="{{ url_for('products_list') }}" class="menu-link">
+                    <span class="menu-icon"><i class="mdi mdi-tag-outline"></i></span>
+                    <span class="menu-text"> Product </span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="{{ url_for('dashboard') }}" class="menu-link">
+                    <span class="menu-icon"><i class="mdi mdi-view-dashboard-outline"></i></span>
+                    <span class="menu-text"> Dashboard </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
