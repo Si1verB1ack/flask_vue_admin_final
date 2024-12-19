@@ -142,6 +142,7 @@ def update_user(user_id):
 
     try:
         db.session.commit()
+        
         return jsonify({'message': 'User updated successfully'}), 200
     except Exception as e:
         db.session.rollback()

@@ -344,7 +344,7 @@
                             if (response.status >= 200 && response.status < 300) {
                                 // Handle the success case
                                 this.clearForm();
-                                {#this.toggleModal();#}
+                                this.toggleModal();
                                 this.showSuccessAlert("Success", "Category added successfully", "success"); // Call this function when you want to trigger the alert
                                 this.fetchCategories(); // Refresh categories
                                 this.loading = false; // Hide loading indicator

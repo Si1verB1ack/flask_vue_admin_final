@@ -24,6 +24,7 @@ def add_category():
     try:
         db.session.add(new_category)
         db.session.commit()
+        
         return jsonify({'message': 'Category added successfully!'}), 201
     except Exception as e:
         db.session.rollback()
@@ -49,6 +50,7 @@ def update_category(category_id):
 
             # Commit the changes to the database
             db.session.commit()
+            
 
             # Return success response
             return jsonify({'status': True}), 200
@@ -70,6 +72,7 @@ def delete_category(category_id):
             # Delete the category from the database
             db.session.delete(existing_category)
             db.session.commit()
+            
 
             # Return success response
             return jsonify({'status': True}), 200

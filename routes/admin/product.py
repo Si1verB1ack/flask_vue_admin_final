@@ -65,6 +65,7 @@ def add_product():
     try:
         db.session.add(new_product)
         db.session.commit()
+        
         return jsonify({'message': 'Product added successfully'}), 201
     except Exception as e:
         db.session.rollback()
@@ -121,6 +122,7 @@ def update_product(product_id):
 
     try:
         db.session.commit()
+        
         return jsonify({'message': 'Product updated successfully'}), 200
     except Exception as e:
         db.session.rollback()
@@ -137,6 +139,7 @@ def delete_product(product_id):
             # Delete the product from the database
             db.session.delete(product)
             db.session.commit()
+            
 
             # Return success response
             return jsonify({'status': True}), 200

@@ -443,6 +443,38 @@
     <script src="https://cdn.jsdelivr.net/npm/@vuelidate/validators"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="{{ url_for('static', filename='admin/assets/libs/gridjs/gridjs.umd.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js">
+    </script>
+    <script>
+        $.LoadingOverlaySetup({
+            background: "rgba(255, 255, 255, 0.8)", // Set the background color with transparency
+            image: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><circle r="80" cx="500" cy="90"/><circle r="80" cx="500" cy="910"/><circle r="80" cx="90" cy="500"/><circle r="80" cx="910" cy="500"/><circle r="80" cx="212" cy="212"/><circle r="80" cx="788" cy="212"/><circle r="80" cx="212" cy="788"/><circle r="80" cx="788" cy="788"/></svg>', // Custom SVG image
+            imageAnimation: "2000ms", // Image animation duration
+            imageColor: "#202020", // Image color
+            imageAutoResize: true, // Resize image automatically
+            imageResizeFactor: 0.3, // Resize factor for the image
+            imageOrder: 1, // Image order
+            fontawesome: false, // Disable FontAwesome icons
+            text: "", // No text
+            textColor: "#202020", // Text color (if you add text)
+            textAutoResize: true, // Resize text automatically
+            textResizeFactor: 0.5, // Text resize factor
+            progress: false, // No progress bar
+            progressAutoResize: true, // Resize progress bar automatically
+            progressResizeFactor: 0.25, // Resize factor for the progress bar
+            progressColor: "#a0a0a0", // Progress bar color
+            progressOrder: 5, // Progress bar order
+            progressFixedPosition: false, // Disable fixed position for the progress bar
+            progressSpeed: 200, // Progress bar speed
+            size: 50, // Initial size of the overlay
+            maxSize: 120, // Max size of the overlay
+            minSize: 20, // Min size of the overlay
+            direction: "column", // Layout direction for items in the overlay
+            fade: 400, // Fade duration
+            resizeInterval: 50, // Resize interval
+            hideAfter: 5000 // Hide overlay after 5 seconds
+        });
+    </script>
 
     {#    <script src="{{ url_for('static', filename='admin/assets/js/app.js') }}"></script>#}
 
@@ -750,6 +782,7 @@
                                 this.showSuccessAlert("Success", "Product added successfully", "success");
                                 this.fetchProducts(); // Refresh products
                                 this.loading = false; // Hide loading indicator
+                                this.toggleModal();
                                 console.log('Product added successfully:', response.data);
                             } else {
                                 this.loading = false;
