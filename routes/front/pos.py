@@ -2,7 +2,7 @@ import os
 import uuid, requests
 from datetime import datetime
 
-from flask import redirect, url_for, render_template, jsonify, request
+from flask import redirect, url_for, render_template, jsonify, request, json
 from app import app, db
 from models.models import Product, Category, Sale, SaleItem
 
@@ -15,10 +15,10 @@ inch = 72
 thermal_paper_size = (3.15 * inch, 11.7 * inch)  # 80mm x 297mm in inches
 
 
-bot_name = 'noti_heng_test_bot'
-bot_token = '6920219188:AAEa2expHhtzMJ6rEH7eilDkNQJXyvyiR90'
-channel = '@heng_python_noti'
-image_file_path = "D:\SETEC\Year_3\semester2\Python\image.gif"
+bot_name = None
+bot_token = None
+channel = None
+image_file_path = None
 
 
 @app.route('/')
@@ -62,6 +62,9 @@ def create_sale():
         db.session.add(new_sale)
         db.session.flush()  # Get the sale ID before committing
 
+        media_group = []
+        files = {}
+        images = []
         # Add items to the sale_items table
         for index, item in enumerate(data['items'], start=1):
             sale_item = SaleItem(
@@ -79,6 +82,10 @@ def create_sale():
                 product.current_stock -= item['quantity']
 
             all_products += f"📦 {index}. {product.name if product else 'Unknown Product'} {item['quantity']} x ${item['price']}\n"
+
+            file_path = os.path.join("static", "upload", "product", "crop", item['image'])
+
+            images.append(file_path)
 
         db.session.commit()
 
@@ -110,14 +117,32 @@ def create_sale():
             all_products=all_products,
         )
 
+        for idx, image in enumerate(images):
+            field_name = f"photo{idx}"  # Unique field name for each image
+            files[field_name] = open(image, 'rb')  # Open image file
+
+            media_item = {
+                "type": "photo",
+                "media": f"attach://{field_name}"
+            }
+
+            # Add the caption only to the first image
+            if idx == 0:
+                media_item["caption"] = html
+                media_item["parse_mode"] = "HTML"
+
+            media_group.append(media_item)
+
 
         print_receipt(ref_code, "Regular", total_amount, received_amount, change, transaction_date, all_products)
 
         # Send the message to Telegram
-        url = f"https://api.telegram.org/bot{bot_token}/sendPhoto"
-        files = {'photo': open(image_file_path, 'rb')}
-        data = {'chat_id': channel, 'caption': html, 'parse_mode': 'HTML'}
-        response = requests.post(url, files=files, data=data)
+        url = f"https://api.telegram.org/bot{bot_token}/sendMediaGroup"
+
+        response = requests.post(url, data={"chat_id": channel, "media": json.dumps(media_group)}, files=files)
+
+        for file in files.values():
+            file.close()
 
         if response.status_code == 200:
             return jsonify({'success': True, 'message': 'Sale created successfully!'}), 201

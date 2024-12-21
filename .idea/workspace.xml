@@ -5,118 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="abb20d38-813d-47cf-a615-4d3ad4cbcbcb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/routes/front/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/front/pos.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/css/_app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/css/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/fonts/roboto/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/fonts/roboto/Roboto-Black.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/fonts/roboto/Roboto-BlackItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/fonts/roboto/Roboto-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/fonts/roboto/Roboto-BoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/fonts/roboto/Roboto-Italic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/fonts/roboto/Roboto-Light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/fonts/roboto/Roboto-LightItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/fonts/roboto/Roboto-Medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/fonts/roboto/Roboto-MediumItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/fonts/roboto/Roboto-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/fonts/roboto/Roboto-Thin.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/fonts/roboto/Roboto-ThinItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/bg-main-dark.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/bg-main.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/error-illustration.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/food-beverage-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/food-beverage-10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/food-beverage-11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/food-beverage-12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/food-beverage-13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/food-beverage-14.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/food-beverage-15.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/food-beverage-16.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/food-beverage-17.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/food-beverage-18.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/food-beverage-19.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/food-beverage-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/food-beverage-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/food-beverage-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/food-beverage-5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/food-beverage-6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/food-beverage-7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/food-beverage-8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/food-beverage-9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/illustration.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/map-marker-dark.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/map-marker-region-dark.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/map-marker-region.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/map-marker.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/phone-illustration.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/placeholders/200x200.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/placeholders/800x800.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/preview-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/preview-10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/preview-11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/preview-12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/preview-13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/preview-14.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/preview-15.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/preview-16.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/preview-17.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/preview-18.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/preview-19.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/preview-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/preview-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/preview-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/preview-5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/preview-6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/preview-7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/preview-8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/preview-9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/profile-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/profile-10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/profile-11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/profile-12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/profile-13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/profile-14.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/profile-15.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/profile-16.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/profile-17.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/profile-18.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/profile-19.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/profile-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/profile-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/profile-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/profile-5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/profile-6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/profile-7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/profile-8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/profile-9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/images/woman-illustration.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/js/app.js.LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/js/ckeditor-balloon-block.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/js/ckeditor-balloon-block.js.LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/js/ckeditor-balloon.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/js/ckeditor-balloon.js.LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/js/ckeditor-classic.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/js/ckeditor-classic.js.LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/js/ckeditor-document.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/js/ckeditor-document.js.LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/js/ckeditor-inline.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/js/ckeditor-inline.js.LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/front/assets/json/location.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/front/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/routes/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/admin/category.py" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin/category.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/admin/product.py" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin/product.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/admin/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin/user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/upload/product/crop/f388dc5d-ad08-473b-83d1-99751a79ecd0.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/upload/product/original/f388dc5d-ad08-473b-83d1-99751a79ecd0.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/category/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/category/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/product/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/product/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/front/pos.py" beforeDir="false" afterPath="$PROJECT_DIR$/routes/front/pos.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/upload/receipt/receipt_20241214-0029.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/upload/receipt/receipt_20241214-0030.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/upload/receipt/receipt_20241215-0001.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/upload/receipt/receipt_20241215-0002.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/front/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -316,6 +212,11 @@
       <workItem from="1734331331411" duration="13000" />
       <workItem from="1734373930811" duration="667000" />
       <workItem from="1734508287324" duration="648000" />
+      <workItem from="1734598558734" duration="391000" />
+      <workItem from="1734634515243" duration="1416000" />
+      <workItem from="1734773250153" duration="112000" />
+      <workItem from="1734774579245" duration="23000" />
+      <workItem from="1734776053262" duration="119000" />
     </task>
     <servers />
   </component>
