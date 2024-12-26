@@ -5,13 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="abb20d38-813d-47cf-a615-4d3ad4cbcbcb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/routes/auth/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/auth/auth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/auth/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/front/auth/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/front/auth/register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/routes/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/front/pos.py" beforeDir="false" afterPath="$PROJECT_DIR$/routes/front/pos.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/upload/receipt/receipt_20241214-0029.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/upload/receipt/receipt_20241214-0030.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/upload/receipt/receipt_20241215-0001.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/upload/receipt/receipt_20241215-0002.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/layout/sidebar-menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/layout/sidebar-menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/layout/topbar-menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/layout/topbar-menu.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/front/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +68,7 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/SETEC/Year_4/PythonII/Final_Theara&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/SETEC/Year_4/PythonII/Final/templates/admin/auth&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -80,11 +87,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\SETEC\Year_4\PythonII\Final\templates\admin\auth" />
+      <recent name="D:\SETEC\Year_4\PythonII\Final\templates\front" />
+      <recent name="D:\SETEC\Year_4\PythonII\Final\routes\auth" />
       <recent name="D:\SETEC\Year_4\PythonII\Final\routes\admin" />
       <recent name="D:\SETEC\Year_4\PythonII\Final\static\front\assets" />
-      <recent name="D:\SETEC\Year_4\PythonII\Final\templates\front" />
-      <recent name="D:\SETEC\Year_4\PythonII\Final\static\front" />
-      <recent name="D:\SETEC\Year_4\PythonII\Final\static\admin\assets\js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\SETEC\Year_4\PythonII\Final\routes\front" />
@@ -216,7 +223,14 @@
       <workItem from="1734634515243" duration="1416000" />
       <workItem from="1734773250153" duration="112000" />
       <workItem from="1734774579245" duration="23000" />
-      <workItem from="1734776053262" duration="119000" />
+      <workItem from="1734776053262" duration="143000" />
+      <workItem from="1734965392976" duration="3000" />
+      <workItem from="1734981435907" duration="6558000" />
+      <workItem from="1735029493033" duration="5322000" />
+      <workItem from="1735040004027" duration="2313000" />
+      <workItem from="1735062944367" duration="12056000" />
+      <workItem from="1735107828288" duration="9105000" />
+      <workItem from="1735239804394" duration="22000" />
     </task>
     <servers />
   </component>
