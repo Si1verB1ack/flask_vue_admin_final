@@ -3,6 +3,8 @@ import uuid, requests
 from datetime import datetime
 
 from flask import redirect, url_for, render_template, jsonify, request, json
+from flask_login import current_user
+
 from app import app, db
 from models.models import Product, Category, Sale, SaleItem
 
@@ -57,7 +59,7 @@ def create_sale():
             transaction_date=transaction_date,
             total_amount=data['total_amount'],
             received_amount=data['received_amount'],
-            user_id=data['user_id']
+            user_id=current_user.id,
         )
         db.session.add(new_sale)
         db.session.flush()  # Get the sale ID before committing

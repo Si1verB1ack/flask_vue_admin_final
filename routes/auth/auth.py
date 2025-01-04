@@ -1,15 +1,14 @@
-from flask import redirect, url_for, render_template, request, flash, jsonify
-from app import app, db, session
-from flask_login import LoginManager, login_user, current_user, logout_user
 from flask_bcrypt import Bcrypt
+from flask_login import LoginManager, login_user, current_user, logout_user
 
+from app import app, db, session
 from models.models import User
 
 bcrypt = Bcrypt(app)
 login_manager = LoginManager(app)
 login_manager.login_view = 'login'
 
-from flask import request, render_template, redirect, url_for, flash
+from flask import request, render_template, redirect, url_for
 
 from flask import flash, jsonify
 
@@ -74,6 +73,8 @@ def register():
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
+
+
     if current_user.is_authenticated:
         return redirect(url_for('pos'))  # Redirect to a different page if the user is already logged in
 
@@ -96,8 +97,14 @@ def login():
             return redirect(url_for('login'))
 
         # Check if the password is correct
-        if not bcrypt.check_password_hash(user.password, password):
-            flash('Invalid password. Please try again.', 'danger')
+        try:
+            if not bcrypt.check_password_hash(user.password, password):
+                flash('Invalid password. Please try again.', 'danger')
+                return redirect(url_for('login', email=email))
+        except ValueError as e:
+            # Handle invalid salt or corrupted hash
+            flash('Invalid password. Try again.', 'danger')
+            print(f"Password validation error: {e}")  # Log the error for debugging
             return redirect(url_for('login', email=email))
 
         # Check if the user is inactive
@@ -137,9 +144,16 @@ def admin_login():
             return redirect(url_for('admin_login', email=email))
 
         # Check if the password is correct
-        if not bcrypt.check_password_hash(user.password, password):
+        try:
+
+            if not bcrypt.check_password_hash(user.password, password):
+                flash('Invalid password. Try again.', 'danger')
+                return redirect(url_for('admin_login', email=email))
+        except ValueError as e:
+            # Handle invalid salt or corrupted hash
+            # print('Invalid salt again')
             flash('Invalid password. Try again.', 'danger')
-            return redirect(url_for('admin_login', email=email))
+            return redirect(url_for('login', email=email))
 
         # Check if the user is inactive
         if user.status == 0:

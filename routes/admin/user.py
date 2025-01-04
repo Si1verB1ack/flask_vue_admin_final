@@ -2,11 +2,14 @@ import os
 import shutil
 
 from flask import jsonify, request
-from werkzeug.security import generate_password_hash
+from flask_bcrypt import Bcrypt
 
 from app import app, render_template, db
 from models.models import User, TempImage
 from sqlalchemy import or_
+
+bcrypt = Bcrypt(app)
+
 
 CROPPED_PROFILE_FOLDER = os.path.join('static', 'upload', 'profile', 'crop')
 app.config['CROPPED_PROFILE_FOLDER'] = CROPPED_PROFILE_FOLDER
@@ -56,7 +59,7 @@ def add_user():
         if os.path.exists(temp_original_file_path):
             shutil.copy(temp_original_file_path, profile_original_file)
 
-    hashed_password = generate_password_hash(password)
+    hashed_password = bcrypt.generate_password_hash(password).decode('utf-8')
 
     # Create a new user
     new_user = User(
@@ -124,7 +127,7 @@ def update_user(user_id):
 
     # Hash password if it's provided
     if password:
-        hashed_password = generate_password_hash(password)
+        hashed_password = bcrypt.generate_password_hash(password).decode('utf-8')
     else:
         hashed_password = user.password  # Keep existing password if not provided
 
