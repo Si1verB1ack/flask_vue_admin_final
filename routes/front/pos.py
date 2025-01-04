@@ -15,10 +15,10 @@ inch = 72
 thermal_paper_size = (3.15 * inch, 11.7 * inch)  # 80mm x 297mm in inches
 
 
-bot_name = 'noti_heng_test_bot'
-bot_token = '6920219188:AAEa2expHhtzMJ6rEH7eilDkNQJXyvyiR90'
-channel = '@heng_python_noti'
-image_file_path = "D:\SETEC\Year_3\semester2\Python\image.gif"
+bot_name = None
+bot_token = None
+channel = None
+image_file_path = None
 
 
 @app.route('/')

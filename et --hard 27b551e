@@ -1,0 +1,12 @@
+[33m56ca558[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{0}: reset: moving to HEAD
+[33m56ca558[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{1}: reset: moving to HEAD~1
+[33m27b551e[m[33m ([m[1;31morigin/main[m[33m)[m HEAD@{2}: commit: add authentication
+[33m56ca558[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{3}: commit: remove sensitive data
+[33mc5967d3[m HEAD@{4}: commit: Add Front end POS
+[33m21c49c0[m HEAD@{5}: commit: feat: Function to check if the image size to commpress && remove image
+[33md157b41[m HEAD@{6}: commit: fix update && remove image
+[33m88b5a11[m HEAD@{7}: commit: remove bug validation backend
+[33md974316[m HEAD@{8}: commit: add database craetion
+[33m2aacab2[m HEAD@{9}: commit: add migration
+[33mdc2fc05[m HEAD@{10}: Branch: renamed refs/heads/main to refs/heads/main
+[33mdc2fc05[m HEAD@{12}: commit (initial): fixing update crop and original

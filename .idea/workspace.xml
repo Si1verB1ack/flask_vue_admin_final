@@ -5,21 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="abb20d38-813d-47cf-a615-4d3ad4cbcbcb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/routes/auth/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/auth/auth.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/auth/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/front/auth/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/front/auth/register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/routes/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/front/pos.py" beforeDir="false" afterPath="$PROJECT_DIR$/routes/front/pos.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/layout/sidebar-menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/layout/sidebar-menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/layout/topbar-menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/layout/topbar-menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/front/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,6 +217,8 @@
       <workItem from="1735062944367" duration="12056000" />
       <workItem from="1735107828288" duration="9105000" />
       <workItem from="1735239804394" duration="22000" />
+      <workItem from="1735321161656" duration="851000" />
+      <workItem from="1735325674226" duration="23000" />
     </task>
     <servers />
   </component>
